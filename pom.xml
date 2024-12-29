@@ -21,7 +21,6 @@
         </repository>
     </repositories>
 
-    
     <dependencies>
         <dependency>
             <groupId>com.github.RhysB</groupId>
