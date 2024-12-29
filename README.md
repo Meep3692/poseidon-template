@@ -1,5 +1,5 @@
 # Project Poseidon example plugin
-*Note that this project is not affiliated with Project Poseidon, if you have any problems with it, tell me, not them!*
+*This project is not affiliated with Project Poseidon, if you have any problems with it, tell me, not them!*
 
 This is an example plugin for Project Poseidon, a Minecraft server software that allows you to create plugins for Minecraft beta 1.7.3.
 You can see more information about Project Poseidon [here](https://github.com/RhysB/Project-Poseidon)
@@ -34,9 +34,9 @@ main: com.example.exampleplugin.ExamplePlugin
 The `name` is simply the name of your plugin. The `version` is updated automatically by maven when you build the project. All you really have to worry about is `main`. This contains the full name of your main plugin class; the one that `extends JavaPlugin`.
 
 ### The Java code
-The folder structure of your Java code must match your package name. The class file `ExamplePlugin` in the package `com.example.exampleplugin` must live in `src/main/java/com/example/exampleplugin`. The package of your main class should match the artifactId in your `pom.xml`. So if you're mrcoolguy, and the artifactId for your treeXplodr plugin is `mrcoolguy.treexplodr`, and you main class is `TreeXploderPlugin`, it will live in `src/main/java/mrcoolguy/treexplodr/TreeXploderPlugin.java`.
+The folder structure of your Java code must match your package name. The class file `ExamplePlugin` in the package `com.example.exampleplugin` must live in `src/main/java/com/example/exampleplugin`. The package of your main class should match the artifactId in your `pom.xml`. So if you're mrcoolguy, and the groupId for your treeXplodr plugin is `mrcoolguy.treexplodr`, and you main class is `TreeXploderPlugin`, it will live in `src/main/java/mrcoolguy/treexplodr/TreeXploderPlugin.java`.
 
-This example mod has the artifactId `com.example.exampleplugin` so all of its code lives in `src/main/java/com/example/exampleplugin`.
+This example mod has the groupId `com.example.exampleplugin` so all of its code lives in `src/main/java/com/example/exampleplugin`.
 
 ## Building
 Use maven to build by using
